@@ -1,0 +1,126 @@
+
+/* ------------------------------------- parte 1 -------------------------------------*/
+header {
+    background: #BBBBBB;
+    padding: 20px 0; /*espaçamento interno. */
+}
+
+.caixa {
+    position: relative; /*para poder levantar*/
+    width: 940px;
+    margin: 0 auto; /* para calcular automaticamente de acordo com os pixels da tela*/
+}
+
+nav {
+    position: absolute; /*para ele poder vim para frente do cabeçario*/
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline; /*significa "em linha" */
+    margin: 0 0 0 15px; /*espaçamento esterno entre palavra da outra*/
+    
+}
+
+nav a {
+    text-transform: uppercase; /*texto em maiúsculo*/
+    color: #000000;
+    font-weight: bold; /*texto em negrito*/
+    font-size: 22px;
+    text-decoration: none; /*tirar o sumblinhado*/
+
+}
+
+/*uma ação quando o mouse estiver por cima*/ 
+nav a:hover {
+    color: #C78C19; /*mudar a cor das letras*/
+    text-decoration: underline; /* mudar o ponteiro do mouse e o sumblinhado*/ 
+
+}
+
+
+
+/* ------------------------------------- parte 2 -------------------------------------*/
+.produtos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;   
+}
+
+
+
+.produtos li {
+    display: inline-block; /*para ficar um do lado do outro e para poder mexer nas medidas*/
+    text-align: center;
+    
+    width: 30%; /*cada um dos elementos ( imagens ) vai ocupar 30% de largura uma da outra*/
+    vertical-align: top; /*poder alinhar os elementos pela linha de cima no caso pelo cabeçario*/
+    
+    margin: 0 1.5%;
+
+    padding: 30px 20px; /*para o espaçamento da descrição*/
+    box-sizing: border-box; /*para diferenciar os 30% de largura do padding o espaçamento interno*/
+    
+
+    /*para fazer a borda dos produtos*/
+    border: 2px solid #000000; /*tamanho da borda, tipo dela ( reta ), cor*/
+    border-radius: 10px; /*para arredondar a borda*/
+}
+
+/*uma ação quando o mouse estiver por cima*/
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+/*quando clicar*/
+.produtos li:active {
+    border-color: #088C19;
+}
+
+/*quando o mouse estiver por cima... alterar o h2*/
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+.produto__descricao {
+    font-size: 18px;
+    
+}
+
+
+.produto__preco {
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 10px 0 0 ; /*para o espaçamento dos preços, o top 10px, 0 de largura e 0 para baixo*/
+}
+
+
+/* ------------------------------------- parte 3 -------------------------------------*/
+
+footer {
+    text-align: center;
+    background: url("../img/bg.jpg"); /*o fundo preto. A img é menor mas quando colocamos em url
+                                        ela se distribui até ocupar 100%*/
+    padding: 40px 0;   
+}
+
+.Copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+
+    margin: 20px 0 0; /*espaçamento superior de 20px*/
+    
+}
+
+
+
+
