@@ -1,5 +1,11 @@
 
 /* ------------------------------------- parte 1 -------------------------------------*/
+/*fonts*/
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 header {
     background: #BBBBBB;
     padding: 20px 0; /*espaçamento interno. */
@@ -120,6 +126,30 @@ footer {
     margin: 20px 0 0; /*espaçamento superior de 20px*/
     
 }
+
+/*para se enquadrar de acordo com o tamanho do aparelho.*/
+@media screen and (max-width: 480px) {
+	.caixa {
+        width: auto;
+    }
+    
+    h1  {
+        text-align: center;
+    }
+    
+    nav {
+        position: static;
+        text-align: center;
+        
+    }
+
+    .produtos, .produtos li, .produtos h2, .produto__descricao, .produto__preco {
+		width: auto;
+		margin: 0.5em auto;
+	
+    }
+}
+
 
 
 

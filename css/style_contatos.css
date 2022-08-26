@@ -2,7 +2,9 @@
 /*ja realizado no "style_produtos.css" a parte 1 e parte 3. */
 
 
-
+body {
+	font-family: 'Montserrat', sans-serif;
+}
 /* ------------------------------------- parte 2 -------------------------------------*/
 main {
     width: 940px;
@@ -73,3 +75,5 @@ td, th {
     border: 1px solid #000000;
     padding: 8px 15px ;
 }
+
+
